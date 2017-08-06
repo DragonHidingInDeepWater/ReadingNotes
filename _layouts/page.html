@@ -1,12 +1,9 @@
 ---
-layout: base
+layout: default
 ---
 
-<article class="page" role="article">
-  <header>
-    <h1 class="page-title">{{ page.title }}</h1>
-    {% include message.html text=page.description %}
-  </header>
+<article class="single row gutters">
+  <h2>{{ page.title }}</h2>
 
   {{ content }}
 </article>

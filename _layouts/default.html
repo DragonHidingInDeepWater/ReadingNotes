@@ -1,39 +1,39 @@
----
-layout: base
----
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <main class="container {% if site.color_scheme %}{{ site.color_scheme }}{% else %}avocado{% endif %}">
+      {% if page.title == "Home" %}
+      <header class="fadeInLeft animated">
+      {% else %}
+      <header>
+      {% endif %}
+        <div>
+          <a href="{{ site.url }}" id="logo" title="{{ site.title }}"
+             style="background-image: url({{ '/assets/images/logo.png' | relative_url }});"></a>
+        </div>
 
-<article class="page" role="article">
-  <header>
-    <h1 class="page-title">{{ page.title | default:"Home"}}</h1>
-    {% include message.html text=page.description %}
-  </header>
+        {% include navigation.html %}
+      </header>
 
-  {{ content }}
+      {{ content }}
 
-  <hr class="dingbat"/>
+      <footer>
+        <p>
+          This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.en_US">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+        </p>
+      </footer>
+    </main>
 
-  {% if site.posts.size > 0 %}
-    <h2 class="hr">Posts</h2>
-    <ul class="related-posts">
-      {% for post in site.posts limit:5 %}
-        {% include post-list-item.html post=post %}
-      {% endfor %}
-    </ul>
-  {% endif %}
-
-  {% assign pages = site.html_pages | where:"layout","page" %}
-  {% if pages.size > 0 %}
-    <h2 class="hr">Pages</h2>
-    <ul class="related-posts">
-      {% for page in pages limit:5 %}
-        {% if page.layout == 'page' %}
-          <li class="h4">
-            <a href="{{ page.url | relative_url }}" data-flip="title">
-              <span>{{ page.title }}</span>
-            </a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  {% endif %}
-</article>
+    <!-- scripts -->
+    <script src="{{ '/assets/js/fluidvids.min.js' | relative_url }}"></script>
+    <script>
+      fluidvids.init({
+        selector: ['iframe', 'object'],
+        players: ['www.youtube.com', 'player.vimeo.com']
+      });
+    </script>
+  </body>
+</html>
