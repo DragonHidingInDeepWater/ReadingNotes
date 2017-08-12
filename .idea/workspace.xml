@@ -1196,7 +1196,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigation.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navigation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/navigation.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -1318,11 +1318,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="links.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="links.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_data/links.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -1996,12 +1996,12 @@
       <workItem from="1502072786042" duration="19195000" />
       <workItem from="1502180726286" duration="3469000" />
       <workItem from="1502325062573" duration="5333000" />
-      <workItem from="1502355153253" duration="27125000" />
+      <workItem from="1502355153253" duration="27202000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55122000" />
+    <option name="totallyTimeSpent" value="55199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-19" y="24" width="1440" height="823" extended-state="0" />
@@ -3660,18 +3660,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_data/links.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/navigation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="22" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/links.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding />
         </state>
       </provider>
