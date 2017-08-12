@@ -1,10 +1,12 @@
 <nav id="main-navigation">
   {% for link in site.data.links %}
   {% if link.title == page.title  || link.category == page.categories %}
-  <a href="../{{ link.url }}" title="{{ link.title }}" class="current">{{ link.title }}</a>
+  <a href="." class="current">{{ link.title }}</a>
 
-  {% else %}
+  {% elsif link.title == 'Home' %}
   <a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+  {% else %}
+  <a href="../{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
   {% endif %}
   {% endfor %}
 </nav>
