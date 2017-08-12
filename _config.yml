@@ -6,7 +6,7 @@ highlighter: null
 permalink: /:title
 
 url:
-baseurl: /
+baseurl: ReadingNotes/
 
 # Custom options:
 # color_scheme: azul|ruby|amber|avocado
