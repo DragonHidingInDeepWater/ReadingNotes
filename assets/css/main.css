@@ -221,6 +221,9 @@ header > nav#main-navigation a:hover {
   transform: translateY(5px);
 }
 
+header > nav#main-navigation a.current {
+  background-color: #5f1a7b;
+}
 
 nav#main-navigation a.trigger {
   display: none;
