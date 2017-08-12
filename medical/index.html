@@ -1,25 +1,23 @@
 ---
 layout: default
-title: 心理
+title: 中医
 ---
 
 {% for category in site.categories %}
-{% if category[0] == 'psychology' %}
+{% if category[0] == 'medical' %}
 
 <section class="archive">
 
   {% for post in category.last %}
   {% unless post.next %}
 
-  {% if forloop.first %}
+  {% unless forloop.first %}
   </div>
   </div>
-  {% endif %}
+  {% endunless %}
 
   <div class="archive-item fadeInDown animated">
-
     <h2>{{ post.date | date: '%Y' }}</h2>
-
     <div>
 
       {% else %}
@@ -58,3 +56,4 @@ title: 心理
 {% endif %}
 
 {% endfor %}
+
