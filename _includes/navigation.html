@@ -3,7 +3,7 @@
   {% if link.title == page.title  || link.category == page.categories %}
   <a href="." class="current">{{ link.title }}</a>
 
-  {% elsif link.title == 'Home' %}
+  {% elsif page.title == 'Home' %}
   <a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
   {% else %}
   <a href="../{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
