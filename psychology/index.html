@@ -1,10 +1,14 @@
 ---
 layout: default
-title: phychologyIndex
+title: 心理
 ---
 
+{% for category in site.categories %}
+{% if category[0] == 'psychology' %}
+
 <section class="archive">
-  {% for post in site.posts %}
+
+  {% for post in category.last %}
   {% unless post.next %}
 
   {% unless forloop.first %}
@@ -38,7 +42,7 @@ title: phychologyIndex
       <article>
         <a href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title }}</a>
         <div class="post-date">
-          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%-d %B" }}</time>
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%m月 %d日" }}</time>
         </div>
       </article>
 
@@ -49,3 +53,7 @@ title: phychologyIndex
 
   {% endfor %}
 </section>
+{% endif %}
+
+{% endfor %}
+

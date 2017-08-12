@@ -20,6 +20,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.sidebar {
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-attachment: scroll;
+  z-index: 200;
+  display: block;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl,
 blockquote,
 table,

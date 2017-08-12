@@ -1,6 +1,6 @@
 <nav id="main-navigation">
   {% for link in site.data.links %}
-  {% if site.categories == link.category %}
+  {% if link.title == page.title  || link.category == 'economic' %}
   <a href="{{ link.url }}" title="{{ link.title }}" class="current">{{ link.title }}</a>
 
   {% else %}

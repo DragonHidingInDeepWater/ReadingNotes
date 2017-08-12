@@ -10,4 +10,7 @@
 - url: /psychology
   title: 心理
   category: psychology
+- url: /medical
+  title: 中医
+  category: medical
 
