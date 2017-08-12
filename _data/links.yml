@@ -1,16 +1,16 @@
-- url: /
+- url: ReadingNotes
   title: Home
   category: Home
-- url: economic/index.html
+- url: ReadingNotes/economic/index.html
   title: 经济
   category: economic
-- url: philosophy/index.html
+- url: ReadingNotes/philosophy/index.html
   title: 哲学
   category: philosophy
-- url: psychology/index.html
+- url: ReadingNotes/psychology/index.html
   title: 心理
   category: psychology
-- url: medical/index.html
+- url: ReadingNotes/medical/index.html
   title: 中医
   category: medical
 
